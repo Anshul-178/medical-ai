@@ -1,0 +1,120 @@
+
+============================================================
+Evaluating: Pneumonia (chest X-ray)
+============================================================
+Test images          : 624  (2 classes)
+Accuracy             : 0.9856  (98.56 %)
+Error rate           : 0.0144  (1.44 %)
+Precision (macro)    : 0.9859
+Recall    (macro)    : 0.9833
+F1-score  (macro)    : 0.9846
+Precision (weighted) : 0.9856
+Recall    (weighted) : 0.9856
+F1-score  (weighted) : 0.9856
+Avg test loss (CE)   : 0.0701
+
+Per-class report:
+              precision    recall  f1-score   support
+
+      NORMAL     0.9870    0.9744    0.9806       234
+   PNEUMONIA     0.9847    0.9923    0.9885       390
+
+    accuracy                         0.9856       624
+   macro avg     0.9859    0.9833    0.9846       624
+weighted avg     0.9856    0.9856    0.9856       624
+
+Confusion matrix (rows=true, cols=predicted)  classes=['NORMAL', 'PNEUMONIA']
+  NORMAL                         [228, 6]
+  PNEUMONIA                      [3, 387]
+
+============================================================
+Evaluating: Brain Tumour (MRI)
+============================================================
+Test images          : 1600  (4 classes)
+Accuracy             : 0.9869  (98.69 %)
+Error rate           : 0.0131  (1.31 %)
+Precision (macro)    : 0.9869
+Recall    (macro)    : 0.9869
+F1-score  (macro)    : 0.9868
+Precision (weighted) : 0.9869
+Recall    (weighted) : 0.9869
+F1-score  (weighted) : 0.9868
+Avg test loss (CE)   : 0.0613
+
+Per-class report:
+              precision    recall  f1-score   support
+
+      glioma     0.9873    0.9700    0.9786       400
+  meningioma     0.9800    0.9800    0.9800       400
+     notumor     0.9901    0.9975    0.9938       400
+   pituitary     0.9901    1.0000    0.9950       400
+
+    accuracy                         0.9869      1600
+   macro avg     0.9869    0.9869    0.9868      1600
+weighted avg     0.9869    0.9869    0.9868      1600
+
+Confusion matrix (rows=true, cols=predicted)  classes=['glioma', 'meningioma', 'notumor', 'pituitary']
+  glioma                         [388, 8, 4, 0]
+  meningioma                     [4, 392, 0, 4]
+  notumor                        [1, 0, 399, 0]
+  pituitary                      [0, 0, 0, 400]
+
+============================================================
+Evaluating: Skin Cancer (dermoscopy)
+============================================================
+Test images          : 1185  (14 classes)
+Accuracy             : 0.9300  (93.00 %)
+Error rate           : 0.0700  (7.00 %)
+Precision (macro)    : 0.9265
+Recall    (macro)    : 0.9284
+F1-score  (macro)    : 0.9269
+Precision (weighted) : 0.9306
+Recall    (weighted) : 0.9300
+F1-score  (weighted) : 0.9299
+Avg test loss (CE)   : 0.4261
+
+Per-class report:
+                               precision    recall  f1-score   support
+
+            Actinic keratoses     0.9205    0.9205    0.9205        88
+         Basal cell carcinoma     0.9072    0.8800    0.8934       100
+Benign keratosis-like lesions     0.8800    0.8800    0.8800       100
+                   Chickenpox     1.0000    0.9600    0.9796       100
+                       Cowpox     0.9327    0.9798    0.9557        99
+               Dermatofibroma     0.8846    0.9200    0.9020        25
+                         HFMD     0.9703    0.9800    0.9751       100
+                      Healthy     0.9515    0.9800    0.9655       100
+                      Measles     1.0000    0.9639    0.9816        83
+             Melanocytic nevi     0.9485    0.9200    0.9340       100
+                     Melanoma     0.8381    0.8800    0.8585       100
+                    Monkeypox     0.9320    0.9600    0.9458       100
+      Squamous cell carcinoma     0.9123    0.8125    0.8595        64
+             Vascular lesions     0.8929    0.9615    0.9259        26
+
+                     accuracy                         0.9300      1185
+                    macro avg     0.9265    0.9284    0.9269      1185
+                 weighted avg     0.9306    0.9300    0.9299      1185
+
+Confusion matrix (rows=true, cols=predicted)  classes=['Actinic keratoses', 'Basal cell carcinoma', 'Benign keratosis-like lesions', 'Chickenpox', 'Cowpox', 'Dermatofibroma', 'HFMD', 'Healthy', 'Measles', 'Melanocytic nevi', 'Melanoma', 'Monkeypox', 'Squamous cell carcinoma', 'Vascular lesions']
+  Actinic keratoses              [81, 1, 1, 0, 0, 1, 0, 0, 0, 0, 2, 1, 1, 0]
+  Basal cell carcinoma           [1, 88, 2, 0, 0, 0, 0, 0, 0, 1, 3, 1, 2, 2]
+  Benign keratosis-like lesions  [2, 0, 88, 0, 1, 1, 0, 0, 0, 2, 5, 0, 1, 0]
+  Chickenpox                     [0, 0, 0, 96, 0, 0, 1, 0, 0, 0, 0, 2, 1, 0]
+  Cowpox                         [0, 0, 0, 0, 97, 0, 0, 1, 0, 0, 0, 1, 0, 0]
+  Dermatofibroma                 [0, 1, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 1]
+  HFMD                           [0, 0, 0, 0, 1, 0, 98, 1, 0, 0, 0, 0, 0, 0]
+  Healthy                        [0, 0, 0, 0, 0, 0, 1, 98, 0, 0, 0, 1, 0, 0]
+  Measles                        [0, 0, 0, 0, 1, 1, 1, 0, 80, 0, 0, 0, 0, 0]
+  Melanocytic nevi               [0, 0, 1, 0, 0, 0, 0, 1, 0, 92, 6, 0, 0, 0]
+  Melanoma                       [0, 2, 7, 0, 1, 0, 0, 0, 0, 2, 88, 0, 0, 0]
+  Monkeypox                      [0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 96, 0, 0]
+  Squamous cell carcinoma        [4, 5, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 52, 0]
+  Vascular lesions               [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 25]
+
+============================================================
+SUMMARY
+============================================================
+Model                      Test N   Acc %   Err %    P(w)    R(w)   F1(w)    Loss
+Pneumonia (chest X-ray)       624   98.56    1.44  0.9856  0.9856  0.9856  0.0701
+Brain Tumour (MRI)           1600   98.69    1.31  0.9869  0.9869  0.9868  0.0613
+Skin Cancer (dermoscopy)     1185   93.00    7.00  0.9306  0.9300  0.9299  0.4261

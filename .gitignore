@@ -1,0 +1,19 @@
+# Large dataset / image directories (too big for git / not source code)
+chest_xray/
+mri/
+my_data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temp files
+*.tmp
+tempCodeRunnerFile.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
