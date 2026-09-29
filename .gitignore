@@ -17,3 +17,6 @@ Thumbs.db
 
 # Environment
 .env
+
+# Pre-trained model weights (too large for git / stored separately)
+*.pth
